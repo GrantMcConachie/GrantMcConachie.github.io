@@ -20,6 +20,12 @@ body {
     line-height:16px;
 }
 
+.t-image {
+    position: relative; /* Declared position allows for location changes */
+    top: -5.5px; /* Moves the image 2px closer to the top of the page */
+    filter: invert(42%) sepia(93%) saturate(1000%) hue-rotate(87deg) brightness(110%) contrast(100%);
+}
+
 h1, h2, h3, h4, h5, h6 {
       font-family:'Open Sans', sans-serif;
     font-weight: 500;
