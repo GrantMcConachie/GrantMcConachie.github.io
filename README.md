@@ -1,2 +1,2 @@
 # GrantMcConachie.github.io
-webpage files
+Personal Website. Check it out at https://GrantMcConachie.github.io
