@@ -16,6 +16,7 @@
         <![endif]-->
     <title>Grant McConachie</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
@@ -45,11 +46,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#header-section">HOME</a></li>
                     <li><a href="#about-section">ABOUT</a></li>
-                    <li><a href="#products-section">MY-WORK</a></li>
-                    <li><a href="#contact-section">CONTACT</a></li>
-                    <li><a href="past_publications.html">PAST PUBLICATIONS</a></li>
+                    <li><a href="#products-section">SELECTED PUBS</a></li>
+                    <li><a href="#contact-section">AWARDS</a></li>
+                    <li><a href="#award-section">CONTACT</a></li>
+                    <li><a href="past_publications.html">ALL PUBS</a></li>
                 </ul>
             </div>
            
@@ -89,12 +90,15 @@
             <!-- ./ Main Heading-->
             <div class="row main-low-margin text-center">
                 <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                    <br><br><br><br>
                     <img class="img-circle" src="assets/img/team/IMG-0338-small.jpg" alt="">
                     <h4><strong>Grant McConachie</strong> </h4>
                     <p>
-                        <a href="https://www.linkedin.com/in/grant-mcconachie-38ab06176/" target="_blank"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
-                        <a href="https://github.com/GrantMcConachie" target="_blank"><i class="fa fa-github fa-2x color-black" aria-hidden="true"></i></a>
-                        <a href="https://orcid.org/0000-0001-5214-416X" target="_blank"><img class="t-image" src="./assets/img/orcid.svg" width="24" height="24"></a>
+                        <a href="https://www.linkedin.com/in/grant-mcconachie-38ab06176/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
+                        <a href="https://github.com/GrantMcConachie" target="_blank" title="Github"><i class="fa fa-github fa-2x color-black" aria-hidden="true"></i></a>
+                        <a href="https://orcid.org/0000-0001-5214-416X" target="_blank" title="orcid"><img class="t-image" src="./assets/img/orcid.svg" width="24" height="24"></a>
+                        <a href="assets/docs/Grant_McConachie_CV.pdf" target="_blank" title="CV"><i class="fa fa-solid fa-file fa-2x" style="color: #F7A072;"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=VHW_fw4AAAAJ" target="_blank" title="CV"><i class="fa fa-brands fa-google-scholar fa-2x" style="color: #6fd0f7;"></i></a>
                     </p>
 
                 </div>
@@ -102,18 +106,21 @@
                 <div class="col-md-7 col-sm-7 col-md-offset-1  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
                     <h3> Research Interests</h3>
                     <p>
-                        I am interested in leveraging the neurobiological information in the 
-                        mosquito olfactory system to discover novel aversive molecules.
-                        Currently, I am exploring how sophisticated machine learning models
-                        can provide an avenue for repellant discovery and how they can 
-                        potentially offer insight into how odors are encoded in the mosquito 
-                        brain. I have a research background in computational chemistry, and had a 
-                        position at the National Cancer Institute for a year before coming to Boston
-                        University.
+                        I’m interested in applying advanced neural network and machine learning models to 
+                        study the brain and behavior. Currently, I’m working on two main projects. The first 
+                        explores how odorous molecules interact with the mosquito olfactory system. To study 
+                        this, I develop multimodal transformer models to predict odorant–olfactory receptor 
+                        binding by integrating low-rank adapted protein and chemical foundation models. 
+                        I’m also building custom chemical foundation models using graph neural networks (GNNs) 
+                        specifically tailored for olfaction.
                     </p>
                     <p>
-                         In my free time I like to <a href="https://open.spotify.com/artist/4tKSBZVenUE40UmCHSrNOW" target="_blank">
-                        make music</a>, graphic design, and run.
+                        The second project focuses on using GNNs to study the collective behavior of schooling fish. 
+                        In this work, I design GNNs that predict temporal, graph-structured data while simultaneously 
+                        inferring dynamic edge relationships between individuals.
+                    </p>
+                    <p>
+                        In my free time I like to make music, graphic design, and run.
                     </p>
                     <br><br><br>
                 </div>
@@ -129,10 +136,9 @@
          <div class="container" >
             <div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
                 <div class="col-md-8 col-md-offset-2 ">
-                    <h1>Recent Publications</h1>
+                    <h1>Select Posters and Publications</h1>
                     <h4>
-                       Below are some of the recent papers that I have had a hand
-                       in publishing.
+                       Recent posters and papers that I have presented/published.
                     </h4>
                 </div>
             </div>
@@ -142,26 +148,33 @@
 
                 <div class="col-md-10  col-md-offset-1 ">
                <div class="col-md-8 " data-scrollreveal="enter left and move 100px, wait 0.4s">
-                   <h4 >  <strong class="color-red">Screen for New Antimicrobial Natural Products from the NCI Program for 
-                    Natural Product Discovery Prefractionated Extract Library</strong></h4>
+                   <h4 >  <strong class="color-red">Learning the Language of Smell: Foundation Models for Protein-Odor Interactions.</strong></h4>
                    <p>
-                    The continuing emergence of antibiotic-resistant microbes highlights the need for the identification 
-                    of new chemotypes with antimicrobial activity. One of the most prolific sources of antimicrobial molecules 
-                    has been the systematic screening of natural product samples. The National Institute of Allergy and Infectious 
-                    Diseases and the National Cancer Institute here report a large screen of 326,656 partially purified natural 
-                    product fractions against a panel of four microbial pathogens, resulting in the identification of >3000 fractions 
-                    with antifungal and/or antibacterial activity. A small sample of these active fractions was further purified and 
-                    the chemical structures responsible for the antimicrobial activity were elucidated. The proof-of-concept study 
-                    identified many different chemotypes, several of which have not previously been reported to have antimicrobial 
-                    activity. The results show that there remain many unidentified antibiotic compounds from nature.
+                    <strong>ABSTRACT</strong>: Foundation models are large neural networks pre-trained on unlabeled data that learn rich, generalizable 
+                    embeddings that enhance performance on downstream tasks. These models are particularly valuable when data is limited, 
+                    where they mitigate overfitting and improve generalization. There has been significant progress in the development 
+                    and application of foundation models to problems in biochemistry but these insights have largely been overlooked in 
+                    neuroscience. We present results adapting biochemical foundation models to problems in olfaction. Several aspects 
+                    of olfactory neuroscience support their use. Olfactory datasets that record how an odorant interacts with olfactory 
+                    receptors (ORs) are small, on the order of hundreds of odorants, which stands in stark contrast to the hypothesized 
+                    billions of odorants that exist. This discrepancy suggests chemical and/or protein foundation models, trained on 
+                    millions of unlabeled chemicals or proteins respectively, can aid prediction of which odorants and ORs will pair. 
+                    We adapted several chemical and protein foundation models to the task of odorant-OR pair prediction across three 
+                    datasets from different species, leading to three main findings. First, molecular information alone was insufficient 
+                    to accurately predict olfactory receptor neuron activity, suggesting that individual neuron selectivity cannot be 
+                    captured from molecular features alone. Second, integrating protein embeddings from protein foundation models drastically 
+                    increases performance, suggesting that multi-modal models, which integrate chemical and protein data, are critical for 
+                    accurate predictions. Third, although we applied several chemical foundation models, no single model achieved superior 
+                    performance, suggesting additional improvements in self-supervised methods for constructing chemical foundation models 
+                    could lead to improvements on this task.
                    </p>
                    <p>
-                    DOI: <a href="https://doi.org/10.1021/acsinfecdis.3c00067" target="_blank">https://doi.org/10.1021/acsinfecdis.3c00067</a>
+                    <a href="assets\img\product\Kempner_poster.jpg" target="_blank">Poster link</a>
                    </p>
                </div>
                <div class="col-md-4 " data-scrollreveal="enter right and move 100px, wait 0.4s">
-               </br></br></br></br></br></br></br></br>
-                   <img class="img-margin-product" src="assets/img/product/nih_2.png" alt="">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                   <img class="img-margin-product" src="assets\img\product\Kempner_poster_pic.jpg"  style="width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;" alt="">
                </div>
                     </div>
            </div>
@@ -169,15 +182,15 @@
            <hr />
             <div class="row main-low-margin" >
                 <div class="col-md-10  col-md-offset-1 ">
- <div class="col-md-4 col-sm-4" data-scrollreveal="enter left and move 100px, wait 0.8s">
- </br></br></br></br></br></br></br></br>
+                <div class="col-md-4 col-sm-4" data-scrollreveal="enter left and move 100px, wait 0.8s">
+                    <br><br><br><br><br><br><br>
                     <img src="assets/img/product/images_large_ao2c07416_0007.png" alt="">
                 </div>
                 <div class="col-md-8 " data-scrollreveal="enter right and move 100px, wait 0.4s">
                     <h4 >  <strong class="color-red">National Cancer Institute (NCI) Program for Natural Product Discovery: 
                         Exploring NCI-60 Screening Data of Natural Product Samples with Artificial Neural Networks</strong></h4>
                     <p>
-                        National Cancer Institute (NCI) Program for Natural Product Discovery is a new initiative aimed 
+                        <strong>ABSTRACT</strong>: National Cancer Institute (NCI) Program for Natural Product Discovery is a new initiative aimed 
                         at creating new technologies for natural product-based drug discovery. Here, we present the development 
                         of a neural network-based bioinformatics platform for visualization and analysis of natural product 
                         high-throughput screening data using the NCI’s 60 human tumor cell anticancer drug screen. We demonstrate how 
@@ -200,7 +213,7 @@
                     <h4 >  <strong class="color-red">Recommendation System to Predict Missing Adsorption Properties 
                         of Nanoporous Materials</strong></h4>
                     <p>
-                        Nanoporous materials (NPMs) selectively adsorb and concentrate gases into their pores 
+                        <strong>ABSTRACT</strong>: Nanoporous materials (NPMs) selectively adsorb and concentrate gases into their pores 
                         and thus could be used to store, capture, and sense many different gases. Modularly synthesized 
                         classes of NPMs, such as covalent organic frameworks (COFs), offer a large number of candidate 
                         structures for each adsorption task. A complete NPM-property table, containing measurements of 
@@ -223,52 +236,40 @@
                     <p>
                      DOI: <a href="https://doi.org/10.1021/acs.chemmater.1c01201" target="_blank">https://doi.org/10.1021/acs.chemmater.1c01201</a>
                     </p>
-                    <div class="position-absolute top-50 start-50 translate-middle" data-scrollreveal="enter top and move 100px, wait 0.3s">
-                        <a href="past_publications.html" >Past Publications</a>
-                    </div>
                 </div>
                 <div class="col-md-4 " data-scrollreveal="enter right and move 100px, wait 0.4s">
-                </br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <img class="img-margin-product" src="assets/img/product/images_medium_cm1c01201_0009.png" alt="">
                 </div>
                      </div>
+                     
             </div>
+                        <div class="text-center" data-scrollreveal="enter right and move 100px, wait 0.4s">
+                            <a href="past_publications.html" >All Posters and Publications</a>
+            </div>
+            <br><br><br>
               <!-- ./ Row Content-->
-        </div>
+            </div>
     <div id="contact-section">
         <div class="container" >
             <div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
                 <div class="col-md-8 col-md-offset-2 ">
-                    <h1>News</h1>
-                    <h4>
-                       Other things going on in my research career.
-                    </h4>
+                    <h1>Awards and Accolades</h1>
                 </div>
             </div>
              <!-- ./ Main Heading-->
              <hr />
              <div class="row main-low-margin" >
                 <div class="col-md-10  col-md-offset-1" data-scrollreveal="enter left and move 100px, wait 0.4s">
-                   <h4 >  <strong class="color-red">Conference Posters 2024</strong></h4>
+                   <h4 >  <strong class="color-red">Ran a half marathon</strong></h4>
                    <p>
-                    I presented work using self-supervised learning and graph neural networks 
-                    to help improve prediction of different olfactory tasks at 
-                    <a href="https://www.cosyne.org/poster-session-2#:~:text=Graph%20neural%20network%20guided%20in%20silico%20deorphanization%20technique%20for%20olfactory%20receptors" target="_blank">COSYNE</a> 
-                    and
-                    <a href="https://achems.org/2024/program.php?page=program&displayday=2&pads=&start_range=&start_interval=&changing_days=yes&hide_details=&shortView=#:~:text=A%20GRAPH%20NEURAL%20NETWORK%20SELF%20SUPERVISED%20LEARNING%20APPROACH%20TO%20GENERATE%20A%20MEANINGFUL%20CHEMICAL%20LATENT%20SPACE%20FOR%20OLFACTORY%20TASKS" target="_blank">AChemS</a>
-                    . This work explores how the generation of latent spaces from different self-supervised learning tasks 
-                    can improve prediction for human perception or olfactory receptor neuron response to monomolecular odors. 
-                    [<a href="assets/img/product/Poster_final.pdf" target="_blank">Poster</a>]
+                    I ran the 2025 mount desert island half <a href="https://www.runmdi.org/" target="_blank">marathon</a>.
                 </p>
                     </div>
-           </div>
-             <!-- ./ Main Heading-->
-             <hr />
-             <div class="row main-low-margin" >
-                <div class="col-md-10  col-md-offset-1" data-scrollreveal="enter left and move 100px, wait 0.4s">
-                   <h4 >  <strong class="color-red">Grants Received 2024</strong></h4>
+                <div class="col-md-10  col-md-offset-1" data-scrollreveal="enter right and move 100px, wait 0.4s">
+                   <h4 >  <strong class="color-red">Won the 2024 NSF GRFP</strong></h4>
                    <p>
-                    I received the <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a> grant in April for my proposed work using 
+                    I received the <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a> grant for my proposed work using 
                     machine learning methods to discover novel mosquito repellants.
                 </p>
                     </div>
@@ -278,7 +279,7 @@
     </div>
     <!--END WORK/PRODUCTS SECTION -->
     <!--CONTACT SECTION -->
-    <div id="product-section">
+    <div id="award-section">
         <div class="container" >
             <div class="row main-top-margin text-center">
                 <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
