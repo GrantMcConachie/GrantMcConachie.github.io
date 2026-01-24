@@ -97,7 +97,7 @@
                         <a href="https://www.linkedin.com/in/grant-mcconachie-38ab06176/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
                         <a href="https://github.com/GrantMcConachie" target="_blank" title="Github"><i class="fa fa-github fa-2x color-black" aria-hidden="true"></i></a>
                         <a href="https://orcid.org/0000-0001-5214-416X" target="_blank" title="orcid"><img class="t-image" src="./assets/img/orcid.svg" width="24" height="24"></a>
-                        <a href="assets/docs/Grant_McConachie_CV.pdf" target="_blank" title="CV"><i class="fa fa-solid fa-file fa-2x" style="color: #F7A072;"></i></a>
+                        <a href="assets/docs/Grant_McConachie_Resume.pdf" target="_blank" title="CV"><i class="fa fa-solid fa-file fa-2x" style="color: #F7A072;"></i></a>
                         <a href="https://scholar.google.com/citations?hl=en&user=VHW_fw4AAAAJ" target="_blank" title="CV"><i class="fa fa-brands fa-google-scholar fa-2x" style="color: #6fd0f7;"></i></a>
                     </p>
 
@@ -149,33 +149,29 @@
 
                 <div class="col-md-10  col-md-offset-1 ">
                <div class="col-md-8 ">
-                   <h4 >  <strong class="color-red">Learning the Language of Smell: Foundation Models for Protein-Odor Interactions.</strong></h4>
+                   <h4 >  <strong class="color-red">Low rank adaptation of chemical foundation models generates effective odorant representations</strong></h4>
                    <p>
-                    <strong>ABSTRACT</strong>: Foundation models are large neural networks pre-trained on unlabeled data that learn rich, generalizable 
-                    embeddings that enhance performance on downstream tasks. These models are particularly valuable when data is limited, 
-                    where they mitigate overfitting and improve generalization. There has been significant progress in the development 
-                    and application of foundation models to problems in biochemistry but these insights have largely been overlooked in 
-                    neuroscience. We present results adapting biochemical foundation models to problems in olfaction. Several aspects 
-                    of olfactory neuroscience support their use. Olfactory datasets that record how an odorant interacts with olfactory 
-                    receptors (ORs) are small, on the order of hundreds of odorants, which stands in stark contrast to the hypothesized 
-                    billions of odorants that exist. This discrepancy suggests chemical and/or protein foundation models, trained on 
-                    millions of unlabeled chemicals or proteins respectively, can aid prediction of which odorants and ORs will pair. 
-                    We adapted several chemical and protein foundation models to the task of odorant-OR pair prediction across three 
-                    datasets from different species, leading to three main findings. First, molecular information alone was insufficient 
-                    to accurately predict olfactory receptor neuron activity, suggesting that individual neuron selectivity cannot be 
-                    captured from molecular features alone. Second, integrating protein embeddings from protein foundation models drastically 
-                    increases performance, suggesting that multi-modal models, which integrate chemical and protein data, are critical for 
-                    accurate predictions. Third, although we applied several chemical foundation models, no single model achieved superior 
-                    performance, suggesting additional improvements in self-supervised methods for constructing chemical foundation models 
-                    could lead to improvements on this task.
+                    <strong>ABSTRACT</strong>: Featurizing odorants to enable robust prediction of their properties is difficult due
+                    to the complex activation patterns that odorants evoke in the olfactory system. Structurally similar odorants can
+                    elicit distinct activation patterns in both the sensory periphery (i.e., at the receptor level) and downstream brain circuits
+                    (i.e., at a perceptual level). Despite efforts to design or discover features for odorants to better predict how they activate
+                    the olfactory system, we lack a universally accepted way to featurize odorants. In this work, we demonstrate that feature-based
+                    approaches that rely on pre-trained foundation models <em>do not</em> significantly outperform classical hand-designed features
+                    on odorant-receptor binding tasks, but that targeted foundation model fine-turning can increase model performance beyond these
+                    limits. To show this, we introduce a new model that creates olfaction-specific representations: <b>L</b>oRA-based
+                    <b>O</b>dorant-<b>R</b>eceptor <b>A</b>ffinity prediction with <b>CROSS</b>-attention (<b>LORAX</b>). We compare existing chemical
+                    foundation model representations to hand-designed physicochemical descriptors using feature-based methods and identify large
+                    information overlap between these representations, highlighting the necessity of fine-tuning to generate novel and superior odorant
+                    representations. We show that LORAX produces a feature space more closely aligned with olfactory neural representation, enabling it
+                    to outperform existing models on predictive tasks.
                    </p>
                    <p>
-                    <a href="assets\img\product\Kempner_poster.jpg" target="_blank">Poster link</a>
+                    Preprint: <a href="https://www.biorxiv.org/content/10.1101/2025.11.04.686628v2" target="_blank">https://www.biorxiv.org/content/10.1101/2025.11.04.686628v2</a>
                    </p>
                </div>
                <div class="col-md-4 ">
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                   <img class="img-margin-product" src="assets\img\product\Kempner_poster_pic.jpg"  style="width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;" alt="">
+                   <img class="img-margin-product" src="assets\img\product\lorax.jpg" style="width:350px; height:auto; display:block; margin:0 auto;" alt="">
                </div>
                     </div>
            </div>
